@@ -15,7 +15,7 @@ $(document).ready(function() {
                 <div class="dish-item" data-id="${dish.id}">
                     <h3>${dish.name}</h3>
                     <p>${dish.description}</p>
-                    <p>Price: $${dish.price.toFixed(2)}</p>
+                    <p>Price: Rs.${dish.price.toFixed(2)}</p>
                     <button class="edit-btn">Edit</button>
                     <button class="delete-btn">Delete</button>
                 </div>
@@ -101,7 +101,7 @@ $(document).ready(function() {
             alert('Dish deleted successfully!');
         }
     });
-    
+
     $('#manager-dashboard').on('click', '#cancel-edit', function() {
         $('#form-container').empty();
     });
